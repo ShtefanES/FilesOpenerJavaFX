@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+
+
+
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.neoanon.filesopener.ui.RootController">
+	<TabPane>
+		<tabs>
+			<Tab fx:id="outputTab" text="%RootController.tab.outputTab">
+				<content>
+					<VBox alignment="CENTER" >
+					<padding><Insets top="5" bottom="5" left="5" right="5"/></padding>
+					<TextArea fx:id="textArea"/>
+					</VBox>
+				</content>
+			</Tab>
+
+			<Tab fx:id="filesTab" text="%RootController.tab.filesTab">
+				<content>
+					<fx:include fx:id="gridPane" source="FilesTabLayout.fxml" />						
+				</content>
+			</Tab>
+			<Tab fx:id="settingTab" text="%RootController.tab.settingTab">
+				<content>
+					<fx:include fx:id="borderPane" source="SettingTabLayout.fxml" />
+				</content>
+			</Tab>
+		</tabs> 
+	</TabPane>
+</StackPane>
+

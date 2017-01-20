@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" spacing="5" fx:id="hbox">
+	<Text />
+	<Button>
+		<graphic>
+			<ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true"
+				smooth="true">
+				<image>
+					<Image url="ru/neoanon/filesopener/images/stop.png" />
+				</image>
+			</ImageView>
+		</graphic>
+	</Button>
+
+</HBox>
+
